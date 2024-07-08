@@ -1,0 +1,74 @@
+@import url(https://fonts.bunny.net/css?family=outfit:300,400,600,700);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Text */
+  --font: "Outfit", sans-serif;
+  --textSize-heading: 22px;
+  --textSize-body: 15px;
+  --textWeight-heading: 600;
+  --textWeight-body: 300;
+
+  /* Colors */
+  --blue: 2C7DFA;
+  --blueShade: #3685ff;
+  --darkNavy: #1f314f;
+  --grey: #7d889e;
+  --lightGrey: #d5e1ef;
+  --white: #ffffff;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--lightGrey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  height: 500px;
+}
+
+.qrCodeCard {
+  background-color: var(--white);
+  width: 320px;
+  height: 497px;
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid var(--lightGrey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.qrCodeImg {
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.qrCodeHeading {
+  font-size: var(--textSize-heading);
+  font-weight: var(--textWeight-heading);
+  color: var(--darkNavy);
+  padding: 0 5px;
+  margin-bottom: 16px;
+}
+
+.qrCodeBody {
+  font-size: var(--textSize-body);
+  font-weight: var(--textWeight-body);
+  padding: 0 5px;
+  color: var(--grey);
+}
